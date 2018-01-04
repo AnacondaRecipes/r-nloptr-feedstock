@@ -1,0 +1,13 @@
+diff -urN nloptr.orig/configure.ac nloptr/configure.ac
+--- nloptr.orig/configure.ac	2018-01-04 11:38:35.000000000 +0000
++++ nloptr/configure.ac	2018-01-04 11:38:46.000000000 +0000
+@@ -145,8 +145,7 @@
+                     CXXFLAGS="${NLOPT_CXXFLAGS}" CXXCPP="${NLOPT_CXXCPP}" >&6; \
+         make >&6; \
+         make install >&6; \
+-        ls | grep -v "^include$" | grep -v "^lib$" | xargs rm -rf; \
+-        rm -rf .libs;)
++        echo "WARNING: Not removing nlopt build artefacts or source code";)
+    AC_MSG_NOTICE([Done installing library to $(pwd)/nlopt-${NLOPT_VERSION}])
+ 
+    ## Store compiler and linker flags

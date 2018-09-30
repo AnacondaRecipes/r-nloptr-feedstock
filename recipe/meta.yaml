@@ -47,10 +47,12 @@ requirements:
 
   host:
     - r-base
+    - {{native}}nlopt            # [win]
 
   run:
     - r-base
     - {{native}}gcc-libs         # [win]
+    - {{native}}nlopt            # [win]
 
 test:
   commands:

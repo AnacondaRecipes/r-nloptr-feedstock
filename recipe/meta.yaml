@@ -49,6 +49,7 @@ requirements:
     - {{native}}nlopt
   run:
     - r-base
+    - {{native}}nlopt
     - {{native}}gcc-libs         # [win]
 
 test:

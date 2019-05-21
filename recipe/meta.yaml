@@ -44,7 +44,7 @@ requirements:
     - {{posix}}make
     - {{posix}}coreutils         # [win]
     - {{posix}}zip               # [win]
-    - libtool                    # [osx]
+    - libtool                    # [not win]
 
   host:
     - r-base
